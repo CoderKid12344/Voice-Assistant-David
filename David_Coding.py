@@ -33,9 +33,7 @@ def Main():
     result = str(sentence)
 
     if "stop" in sentence:
-        Say("Ok sir, you can call me anytime, by saying, Wake Up or just calling my name")
-        os.startfile("D:\\My Voice Assistant David\\HotWardDitection.py")
-        sys.exit()
+        Say('Ok sir! Bye!')
 
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
